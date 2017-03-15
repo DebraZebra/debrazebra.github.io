@@ -1,0 +1,42 @@
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  /* min-height: 50rem;  Can be removed; just added for demo purposes */
+  background-color: transparent;
+}
+
+.card {
+  float: center;
+  width: 31%;
+  margin: 1%;
+  padding: 3rem;
+  background-color: #5c2184;
+}
+
+
+.card-heading {
+  text-align: center;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 85%;
+  color: #fff;
+}
