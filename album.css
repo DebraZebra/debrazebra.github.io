@@ -37,6 +37,7 @@
 }
 
 .card-text {
+  text-align: center;
   font-size: 85%;
   color: #fff;
 }
