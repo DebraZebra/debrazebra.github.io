@@ -1,7 +1,12 @@
+body {
+  background-color: #868686;
+}
+
 .jumbotron {
   background-color: transparent;
+  color: #fff;
 }
 
 .col-md {
-    padding: 15px;
+  padding: 15px;
 }
