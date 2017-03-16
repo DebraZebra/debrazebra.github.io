@@ -1,3 +1,3 @@
 # Personal Website
 
-Hosted at: [debraaly.com](www.debraaly.com)
+Hosted at: [debraaly.com](http://debraaly.com)
