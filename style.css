@@ -1,12 +1,77 @@
+:root {
+  --site-background: #cd9adb;
+}
+
 body {
-  background-color: #D3D3D3;
+  background-color: var(--site-background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .jumbotron {
   background-color: transparent;
   color: #000;
+  font-family: "Mouse Memoirs", sans-serif;
+}
+.jumbotron-heading {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.jumbotron .lead {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .col-md {
   padding: 15px;
+}
+
+.project-card {
+  aspect-ratio: 3 / 4;
+  background-position: center;
+  background-size: cover;
+  border: 6px solid var(--card-border, #400843);
+  border-radius: 0;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.project-card::before {
+  background: rgba(0, 0, 0, 0.25);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.project-card .card-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  text-shadow: 0 2px 4px #000;
+  z-index: 1;
+}
+
+.project-card:hover,
+.project-card:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.couch-container {
+  margin: auto auto 0;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.couch-image {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
 }
