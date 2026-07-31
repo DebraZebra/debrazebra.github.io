@@ -1,6 +1,7 @@
 :root {
   --site-background: #cd9adb;
-  --gallery-floor: #b48fc0;
+  --gallery-floor: #cd9adb;
+  /* --gallery-floor: #b48fc0; */
 }
 
 body {
