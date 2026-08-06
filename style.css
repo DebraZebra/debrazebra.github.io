@@ -49,7 +49,7 @@ body {
 }
 
 .project-card::before {
-  background: rgba(0, 0, 0, 0.25);
+  /* background: rgba(0, 0, 0, 0.25); */
   content: "";
   inset: 0;
   position: absolute;
@@ -70,6 +70,43 @@ body {
 .project-card:focus {
   color: #fff;
   text-decoration: none;
+}
+
+.sea-change-content {
+  padding-bottom: 3rem;
+}
+
+.sea-change-row {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sea-change-row .project-card {
+  aspect-ratio: 4 / 3;
+  flex: 0 1 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sea-change-row p {
+  flex: 1 1 50%;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .sea-change-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sea-change-row .project-card,
+  .sea-change-row p {
+    flex-basis: auto;
+  }
 }
 
 .couch-container {
